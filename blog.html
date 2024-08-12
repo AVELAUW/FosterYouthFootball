@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Foster Youth Football</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Looking For 1st & 2nd Graders</h2>
+      <h5>Deadline is August 1, 2025</h5>
+      <img src="Foster Jr Photos/Foster poster.jpeg" alt="Foster poster" width=50% height=50%>
+      <!--<div class="fakeimg" style="height:200px;">Image</div>-->
+      <p></p>
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>This weeks win against Tyee!</h2>
+      <h5>Foster wins 28-21, August 15, 2024</h5>
+      <!--<div class="fakeimg" style="height:200px;">Image</div>--><img src="https://cdn2.sportngin.com/attachments/news_article/9283/7580/NFL_Flag_Football_better_than_Tackle_large.jpg" alt="Foster poster" width=100% height=50%>
+      <p>Foster takes away the win</p>
+      <p>The game started off slow. Both teams couldn't seem to score any touchdowns in the 1st quarter. Suddenly, Foster ends up getting a pick six late in the second quarter with a minute left in the half. With only 40 seconds left Tyee had a chance to score a touchdown before the half, but Foster got a stop and took it to the half. Coming out of a slow first half, Tyee came out with an effortless score early in the second half to make it 7-7. Foster answers right back with another score to make the 14-7. Foster kicks the ball off to Tyee and they fumble the ball which gives Foster great field position to later score another touchdown making the score 21-7. After the first mistake on kickoff, Tyee makes up for it with a kick return touchdown at the end of the third quarter, 21-14. Foster takes the ball down the field, slowly shredding time, to score another touchdown making the score 28-14. Tyee did not give up with 2 minutes left in the game, scoring another empressive touchdown in the last mintute of the game, 28-21. Foster runs the rest of time off the clock and takes home the win, 28-21!  </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Us</h2>
+      <img src="Foster Jr Photos/Foster logo.jpeg" alt="Foster Jr" width=50% height=50%>
+      <!--<div class="fakeimg" style="height:100px;">Image</div>-->
+      <p>We are in year one of providing a positive opportunity for youth and their families to be a part of.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
